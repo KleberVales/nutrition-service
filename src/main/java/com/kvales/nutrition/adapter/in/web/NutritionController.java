@@ -16,7 +16,7 @@ public class NutritionController {
         this.registerMealUseCase = registerMealUseCase;
     }
 
-    @PostMapping("/meals")
+    @PostMapping("/meal")
     public ResponseEntity<RegisterMealUseCase.RegisterMealResult> registerMeal(
             @RequestBody RegisterMealRequest request
     ) {
