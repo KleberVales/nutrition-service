@@ -261,5 +261,37 @@ RegisterMealUseCase
 
 The controller depends on the use case rather than directly depending on the service implementation.
 
+### Outbound Port
+
+Defines what the application needs from external systems.
+
+```text
+application/port/out/
+```
+
+Example:
+
+```text
+DailyNutritionRepository
+```
+
+The application therefore does not need to know whether the data is stored using JPA, JDBC, PostgreSQL, or another persistence technology.
+
+### Inbound Adapter
+
+```text
+adapter/in/web/
+```
+
+Responsible for translating HTTP requests into application commands.
+
+### Outbound Adapter
+
+```text
+adapter/out/persistence/
+```
+
+Responsible for translating application/domain data into the persistence technology.
+
 
 
