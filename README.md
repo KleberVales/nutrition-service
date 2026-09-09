@@ -195,4 +195,33 @@ POST /api/nutrition/meal
 
 The controller maps the request into a `RegisterMealCommand` and delegates the operation to the application use case.
 
+## 🔄 Request Flow
+
+A meal registration follows this flow:
+
+```text
+HTTP Request
+     │
+     ▼
+NutritionController
+     │
+     ▼
+RegisterMealUseCase
+     │
+     ▼
+RegisterMealService
+     │
+     ▼
+DailyNutritionRepository
+     │
+     ▼
+Persistence Adapter
+     │
+     ▼
+PostgreSQL
+```
+
+The application service retrieves the nutrition record for the current date, applies the domain operation to add calories, and persists the updated entity.
+
+
 
