@@ -101,4 +101,21 @@ adapter/
 
 The HTTP controller is an inbound adapter, while persistence and security implementations are outbound adapters.
 
+## 🛠️ Technologies
+
+| Technology        | Purpose                 |
+| ----------------- | ----------------------- |
+| Java 21           | Programming language    |
+| Spring Boot 3.2.4 | Application framework   |
+| Spring Web        | REST API                |
+| Spring Data JPA   | Persistence abstraction |
+| PostgreSQL        | Relational database     |
+| Spring Security   | Application security    |
+| JJWT              | JWT processing          |
+| Lombok            | Boilerplate reduction   |
+| Gradle            | Build automation        |
+| JUnit 5           | Testing                 |
+
+The project uses Java 21 through the Gradle Java toolchain and Spring Boot 3.2.4.
+
 
