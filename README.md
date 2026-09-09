@@ -86,4 +86,17 @@ application/
 
 The inbound port defines what the application can do, while outbound ports define the dependencies required by the application.
 
+#### Adapters
+
+Connect the application to external technologies.
+
+```text
+adapter/
+├── in/
+│   └── web/
+└── out/
+    ├── persistence/
+    └── security/
+```
+
 
