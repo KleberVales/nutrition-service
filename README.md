@@ -99,4 +99,6 @@ adapter/
     └── security/
 ```
 
+The HTTP controller is an inbound adapter, while persistence and security implementations are outbound adapters.
+
 
