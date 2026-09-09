@@ -165,4 +165,25 @@ nutrition-service/
 
 This structure reflects the repository's current separation into `adapter`, `application`, and `domain` packages.
 
+## 🔌 API
+
+### Register a meal
+
+Registers the calories consumed by a user for the current day.
+
+**Endpoint**
+
+```http
+POST /api/nutrition/meal
+```
+
+**Request**
+
+```json
+{
+  "userId": 1,
+  "calories": 650
+}
+```
+
 
