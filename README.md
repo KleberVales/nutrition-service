@@ -57,3 +57,18 @@ The project follows **Hexagonal Architecture**, separating the business domain f
                  │      JPA / PostgreSQL   │
                  └─────────────────────────┘
 ```
+
+### Architecture layers
+
+#### Domain
+
+Contains the core business model and rules.
+
+```text
+domain/
+└── DailyNutrition.java
+```
+
+`DailyNutrition` represents the user's daily nutritional state and contains domain behavior such as adding calories.
+
+
