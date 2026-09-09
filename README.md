@@ -71,4 +71,19 @@ domain/
 
 `DailyNutrition` represents the user's daily nutritional state and contains domain behavior such as adding calories.
 
+#### Application
+
+Contains the application's use cases and ports.
+
+```text
+application/
+├── port/
+│   ├── in/
+│   └── out/
+└── service/
+    └── RegisterMealService.java
+```
+
+The inbound port defines what the application can do, while outbound ports define the dependencies required by the application.
+
 
