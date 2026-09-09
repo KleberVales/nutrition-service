@@ -17,3 +17,7 @@ The current implementation provides an endpoint for registering a meal. When a m
 5. Returns the updated result.
 
 The application is designed to keep the business rules independent from frameworks and infrastructure.
+
+## 🏗️ Architecture
+
+The project follows **Hexagonal Architecture**, separating the business domain from external technologies such as HTTP and database persistence.
