@@ -21,3 +21,39 @@ The application is designed to keep the business rules independent from framewor
 ## 🏗️ Architecture
 
 The project follows **Hexagonal Architecture**, separating the business domain from external technologies such as HTTP and database persistence.
+
+```text
+                 ┌─────────────────────────┐
+                 │      HTTP Client         │
+                 └────────────┬────────────┘
+                              │
+                              ▼
+                 ┌─────────────────────────┐
+                 │   NutritionController   │
+                 │      Inbound Adapter    │
+                 └────────────┬────────────┘
+                              │
+                              ▼
+                 ┌─────────────────────────┐
+                 │   RegisterMealUseCase   │
+                 │      Inbound Port       │
+                 └────────────┬────────────┘
+                              │
+                              ▼
+                 ┌─────────────────────────┐
+                 │   RegisterMealService   │
+                 │   Application Service   │
+                 └────────────┬────────────┘
+                              │
+                              ▼
+                 ┌─────────────────────────┐
+                 │ DailyNutritionRepository│
+                 │       Outbound Port     │
+                 └────────────┬────────────┘
+                              │
+                              ▼
+                 ┌─────────────────────────┐
+                 │ Persistence Adapter     │
+                 │      JPA / PostgreSQL   │
+                 └─────────────────────────┘
+```
