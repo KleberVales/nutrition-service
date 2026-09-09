@@ -186,4 +186,13 @@ POST /api/nutrition/meal
 }
 ```
 
+### Request fields
+
+| Field      | Type   | Description                   |
+| ---------- | ------ | ----------------------------- |
+| `userId`   | `Long` | User identifier               |
+| `calories` | `int`  | Calories consumed in the meal |
+
+The controller maps the request into a `RegisterMealCommand` and delegates the operation to the application use case.
+
 
