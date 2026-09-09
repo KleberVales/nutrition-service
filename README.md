@@ -118,4 +118,51 @@ The HTTP controller is an inbound adapter, while persistence and security implem
 
 The project uses Java 21 through the Gradle Java toolchain and Spring Boot 3.2.4.
 
+## 📂 Project Structure
+
+```text
+nutrition-service/
+│
+├── gradle/
+│   └── wrapper/
+│
+├── src/
+│   └── main/
+│       ├── java/
+│       │   └── com/
+│       │       └── kvales/
+│       │           └── nutrition/
+│       │               │
+│       │               ├── adapter/
+│       │               │   ├── in/
+│       │               │   │   └── web/
+│       │               │   │       └── NutritionController.java
+│       │               │   │
+│       │               │   └── out/
+│       │               │       ├── persistence/
+│       │               │       └── security/
+│       │               │
+│       │               ├── application/
+│       │               │   ├── port/
+│       │               │   │   ├── in/
+│       │               │   │   └── out/
+│       │               │   │
+│       │               │   └── service/
+│       │               │       └── RegisterMealService.java
+│       │               │
+│       │               ├── domain/
+│       │               │   └── DailyNutrition.java
+│       │               │
+│       │               └── NutritionMain.java
+│       │
+│       └── resources/
+│
+├── build.gradle
+├── gradlew
+├── gradlew.bat
+└── settings.gradle
+```
+
+This structure reflects the repository's current separation into `adapter`, `application`, and `domain` packages.
+
 
