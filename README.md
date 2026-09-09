@@ -9,3 +9,9 @@ This service is part of a **microservices-based nutrition application**, with a 
 The Nutrition Service manages the user's daily nutritional information.
 
 The current implementation provides an endpoint for registering a meal. When a meal is registered, the service:
+
+1. Receives the user ID and meal calories.
+2. Finds the user's nutrition record for the current day.
+3. Adds the meal calories to the daily calorie total.
+4. Persists the updated nutrition information.
+5. Returns the updated result.
