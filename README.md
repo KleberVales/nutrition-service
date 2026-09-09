@@ -293,5 +293,27 @@ adapter/out/persistence/
 
 Responsible for translating application/domain data into the persistence technology.
 
+## 🔐 Security
+
+The service includes Spring Security and JJWT dependencies and contains a dedicated outbound security adapter:
+
+```text
+adapter/out/security/
+```
+
+JWT-related functionality can therefore remain isolated from the domain and application layers.
+
+## 🗄️ Database
+
+The service uses **PostgreSQL** as its relational database and **Spring Data JPA** for persistence.
+
+The persistence implementation is isolated under:
+
+```text
+adapter/out/persistence/
+```
+
+This allows the domain and application layers to remain independent from PostgreSQL and JPA implementation details.
+
 
 
