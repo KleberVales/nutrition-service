@@ -15,3 +15,5 @@ The current implementation provides an endpoint for registering a meal. When a m
 3. Adds the meal calories to the daily calorie total.
 4. Persists the updated nutrition information.
 5. Returns the updated result.
+
+The application is designed to keep the business rules independent from frameworks and infrastructure.
