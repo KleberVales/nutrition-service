@@ -241,5 +241,25 @@ nutrition.addCalories(calories);
 
 This keeps the business operation inside the domain model.
 
+## 🔌 Ports and Adapters
+
+The project uses ports to keep the core application independent of infrastructure.
+
+### Inbound Port
+
+Defines application use cases.
+
+```text
+application/port/in/
+```
+
+Example:
+
+```text
+RegisterMealUseCase
+```
+
+The controller depends on the use case rather than directly depending on the service implementation.
+
 
 
