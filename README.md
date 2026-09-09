@@ -223,5 +223,23 @@ PostgreSQL
 
 The application service retrieves the nutrition record for the current date, applies the domain operation to add calories, and persists the updated entity.
 
+## 🧠 Domain Model
+
+The main domain object is:
+
+```text
+DailyNutrition
+```
+
+It represents the nutritional state of a user for a specific day.
+
+Instead of allowing application or infrastructure code to directly manipulate the calorie value, the domain exposes behavior such as:
+
+```java
+nutrition.addCalories(calories);
+```
+
+This keeps the business operation inside the domain model.
+
 
 
